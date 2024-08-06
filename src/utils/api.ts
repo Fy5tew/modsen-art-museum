@@ -54,7 +54,9 @@ function _parsePaintingFromJSON(
         isOnView: paintingJson.is_on_view,
         gallery: paintingJson.gallery_title,
         creditLine: paintingJson.credit_line,
-        imageUrl: `${configJson.iiif_url}/${paintingJson.image_id}/${ARTIC_API_IMAGE_FILE}`,
+        imageUrl: paintingJson.image_id
+            ? `${configJson.iiif_url}/${paintingJson.image_id}/${ARTIC_API_IMAGE_FILE}`
+            : '/image/default.svg',
     };
 }
 

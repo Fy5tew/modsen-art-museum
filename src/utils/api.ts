@@ -78,6 +78,10 @@ export async function getPainting(paintingId: number): Promise<Painting> {
 export async function getPaintingList(
     paintingIds: number[]
 ): Promise<PaintingList> {
+    if (!paintingIds.length) {
+        return [];
+    }
+
     const response = await fetch(
         `${ARTIC_API_URL}/artworks?` +
             new URLSearchParams({

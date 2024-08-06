@@ -9,14 +9,14 @@
         aspect-ratio: 1/1;
     }
     > .text {
-        color: #FFFFFF;
+        color: #ffffff;
         transition: color 0.1s linear;
     }
 
     @media (hover: hover) {
         &:hover {
             > .text {
-                color: #E0A449;
+                color: #e0a449;
             }
         }
     }

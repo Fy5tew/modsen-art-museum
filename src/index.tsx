@@ -4,6 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 import { App } from './App';
 
+import './reset.scss';
 import './index.scss';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(

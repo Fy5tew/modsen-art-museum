@@ -13,12 +13,6 @@ function Pagination({ pagination }: PaginationProps) {
                 <div className={styles.group}>
                     <button
                         className={styles.button}
-                        onClick={() => pagination.toStart()}
-                    >
-                        &#60;&#60;
-                    </button>
-                    <button
-                        className={styles.button}
                         onClick={() => pagination.prev()}
                     >
                         &#60;
@@ -44,12 +38,6 @@ function Pagination({ pagination }: PaginationProps) {
                         onClick={() => pagination.next()}
                     >
                         &#62;
-                    </button>
-                    <button
-                        className={styles.button}
-                        onClick={() => pagination.toEnd()}
-                    >
-                        &#62;&#62;
                     </button>
                 </div>
             )}

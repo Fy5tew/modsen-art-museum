@@ -3,11 +3,12 @@
     flex-direction: row;
     gap: 1em;
 
+    user-select: none;
+
     > .group {
         display: flex;
         flex-direction: row;
         gap: 0.5em;
-        
 
         > .button {
             padding: 0.3em;
@@ -19,14 +20,14 @@
             color: #393939;
             transition: color 0.1s linear;
 
-            &[data-current=true] {
-                color: #FFFFFF;
-                background-color: #F17900;
+            &[data-current='true'] {
+                color: #ffffff;
+                background-color: #f17900;
             }
 
             @media (hover: hover) {
-                &:hover:not([data-current=true]) {
-                    color: #F17900;
+                &:hover:not([data-current='true']) {
+                    color: #f17900;
                 }
             }
         }

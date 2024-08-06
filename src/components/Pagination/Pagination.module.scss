@@ -1,0 +1,34 @@
+.pagination {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+
+    > .group {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5em;
+        
+
+        > .button {
+            padding: 0.3em;
+            border-radius: 5px;
+            aspect-ratio: 1/1;
+
+            font-size: 1.1em;
+            font-family: 'Lexend Deca', sans-serif;
+            color: #393939;
+            transition: color 0.1s linear;
+
+            &[data-current=true] {
+                color: #FFFFFF;
+                background-color: #F17900;
+            }
+
+            @media (hover: hover) {
+                &:hover:not([data-current=true]) {
+                    color: #F17900;
+                }
+            }
+        }
+    }
+}

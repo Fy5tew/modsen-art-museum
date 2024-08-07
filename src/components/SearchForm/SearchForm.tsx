@@ -1,17 +1,13 @@
 import { useState, useCallback, ChangeEvent } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { PageHeader } from '#/components/PageHeader';
 import { Search } from '#/components/Search';
 import { PaintingList } from '#components/PaintingList';
 import { useDebounce } from '#/hooks/useDebounce';
-import { useFavoritesIds } from '#/hooks/useFavoritesIds';
 import { useSearchPaintings } from '#/hooks/useSearchPaintings';
 
 import styles from './SearchForm.module.scss';
 
 function SearchForm() {
-    const navigate = useNavigate();
-    const favorites = useFavoritesIds();
     const [searchQuery, setSearchQuery] = useState<string>('');
     const debauncedSearchQuery = useDebounce(searchQuery, 500);
     const [paintings] = useSearchPaintings(debauncedSearchQuery);
@@ -21,13 +17,6 @@ function SearchForm() {
             setSearchQuery(event.target.value);
         },
         []
-    );
-
-    const handleCardClick = useCallback(
-        (id: number) => {
-            navigate(`/info/${id}`);
-        },
-        [navigate]
     );
 
     return (
@@ -47,16 +36,7 @@ function SearchForm() {
             <div className={styles.resultsWrapper}>
                 {debauncedSearchQuery &&
                     (paintings.length ? (
-                        <PaintingList
-                            variant="small"
-                            paintings={paintings}
-                            isFavorite={(id) =>
-                                favorites.favoritesIds.includes(id)
-                            }
-                            onClick={handleCardClick}
-                            onFavoriteAdd={favorites.add}
-                            onFavoriteRemove={favorites.remove}
-                        />
+                        <PaintingList variant="small" paintings={paintings} />
                     ) : (
                         <h3 className={styles.noMaches}>
                             No maches for <mark>'{debauncedSearchQuery}'</mark>

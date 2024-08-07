@@ -34,14 +34,20 @@ function SearchForm() {
                 />
             </div>
             <div className={styles.resultsWrapper}>
-                {debauncedSearchQuery &&
-                    (paintings.length ? (
-                        <PaintingList variant="small" paintings={paintings} />
-                    ) : (
-                        <h3 className={styles.noMaches}>
-                            No maches for <mark>'{debauncedSearchQuery}'</mark>
-                        </h3>
-                    ))}
+                <div className={styles.results}>
+                    {debauncedSearchQuery &&
+                        (paintings.length ? (
+                            <PaintingList
+                                variant="small"
+                                paintings={paintings}
+                            />
+                        ) : (
+                            <h3 className={styles.noMaches}>
+                                No maches for{' '}
+                                <mark>'{debauncedSearchQuery}'</mark>
+                            </h3>
+                        ))}
+                </div>
             </div>
         </div>
     );

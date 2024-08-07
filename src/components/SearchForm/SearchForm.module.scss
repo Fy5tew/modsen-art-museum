@@ -1,12 +1,13 @@
 .searchForm {
     display: flex;
     flex-direction: column;
-    gap: 4em;
+    gap: 1em;
 
     > .headerWrapper {
         max-width: 600px;
         margin: auto;
         margin-top: 5em;
+        margin-bottom: 3em;
     }
 
     > .searchWrapper {
@@ -16,8 +17,25 @@
     }
 
     > .resultsWrapper {
-        > .noMaches {
-            text-align: center;
+        border-radius: 15px;
+        padding: 1em;
+        background-color: #f0f0f0;
+
+        max-width: 730px;
+        margin: auto;
+
+        > .results {
+            padding: 0.5em;
+            max-height: 300px;
+            overflow-y: scroll;
+
+            > .noMaches {
+                text-align: center;
+            }
+        }
+
+        &:has(> .results:empty) {
+            visibility: hidden;
         }
     }
 }

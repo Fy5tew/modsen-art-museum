@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback, ChangeEvent } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { PageLayout } from '#/components/PageLayout';
 import { PageHeader } from '#/components/PageHeader';
 import { PageDoubleHeader } from '#/components/PageDoubleHeader';
@@ -14,6 +15,7 @@ import { FOR_YOU_QUERY, FOR_YOU_PAGES } from '#/constants';
 import styles from './HomePage.module.scss';
 
 function HomePage() {
+    const navigate = useNavigate();
     const favorites = useFavoritesIds();
     const [searchQuery, setSearchQuery] = useState<string>('');
     const [searchPage, setSearchPage] = useState<number>(1);
@@ -36,6 +38,13 @@ function HomePage() {
             pagination.set(1);
         },
         [pagination]
+    );
+
+    const handleCardClick = useCallback(
+        (id: number) => {
+            navigate(`/info/${id}`);
+        },
+        [navigate]
     );
 
     useEffect(() => {
@@ -67,7 +76,7 @@ function HomePage() {
                     <PaintingList
                         paintings={searchedPaintings}
                         variant="big"
-                        onClick={(id) => console.log(id)}
+                        onClick={handleCardClick}
                         isFavorite={(id) => favorites.favoritesIds.includes(id)}
                         onFavoriteAdd={favorites.add}
                         onFavoriteRemove={favorites.remove}
@@ -91,7 +100,7 @@ function HomePage() {
                 <PaintingList
                     paintings={forYouPaintings}
                     variant="small"
-                    onClick={(id) => console.log(id)}
+                    onClick={handleCardClick}
                     isFavorite={(id) => favorites.favoritesIds.includes(id)}
                     onFavoriteAdd={favorites.add}
                     onFavoriteRemove={favorites.remove}

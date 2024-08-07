@@ -1,5 +1,3 @@
-import { useCallback } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { PageLayout } from '#/components/PageLayout';
 import { PageHeader } from '#/components/PageHeader';
 import { PageDoubleHeader } from '#/components/PageDoubleHeader';
@@ -9,15 +7,7 @@ import bookmarkSecondaryIconSrc from '/icon/bookmark-secondary.svg';
 import styles from './FavoritesPage.module.scss';
 
 function FavoritesPage() {
-    const navigate = useNavigate();
     const favorites = useFavorites();
-
-    const handleCardClick = useCallback(
-        (id: number) => {
-            navigate(`/info/${id}`);
-        },
-        [navigate]
-    );
 
     return (
         <PageLayout>
@@ -43,14 +33,8 @@ function FavoritesPage() {
             <div className={styles.favoritesListWrapper}>
                 {favorites.favorites?.length ? (
                     <PaintingList
+                        variant="small"
                         paintings={favorites.favorites}
-                        onClick={handleCardClick}
-                        isFavorite={(id) =>
-                            favorites.favorites?.some((p) => p.id === id) ??
-                            false
-                        }
-                        onFavoriteAdd={favorites.add}
-                        onFavoriteRemove={favorites.remove}
                     />
                 ) : (
                     <h3 className={styles.emptyList}>

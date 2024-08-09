@@ -1,6 +1,6 @@
 import { useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { PaintingList as PaintingListType } from '#/types';
+import { PaintingList as PaintingListType } from '#/types/types';
 import { Painting, PaintingProps } from '#components/Painting';
 import { useFavoritesIds } from '#/hooks/useFavoritesIds';
 

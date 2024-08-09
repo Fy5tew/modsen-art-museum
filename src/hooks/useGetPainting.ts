@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Painting } from '#/types';
+import { Painting } from '#/types/types';
 import { getPainting } from '#/utils/api';
 
 function useGetPainting(paintingId: number): Painting | null {

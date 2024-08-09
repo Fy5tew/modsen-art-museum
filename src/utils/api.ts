@@ -9,7 +9,7 @@ import {
     APIGetPaintingJSONResponse,
     APIGetPaintingListJSONResponse,
     APISearchPaintingsJSONResponse,
-} from '#/types';
+} from '#/types/api';
 import { ARTIC_API_URL, ARTIC_API_IMAGE_FILE } from '#/constants';
 
 const PAINTING_TYPE_ID = 1;

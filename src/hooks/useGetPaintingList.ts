@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { PaintingList } from '#/types';
+import { PaintingList } from '#/types/types';
 import { getPaintingList } from '#/utils/api';
 
 function useGetPaintingList(paintingIds: number[]): PaintingList | null {

@@ -1,27 +1,18 @@
 import { NavButton } from '#components/NavButton';
-import homePrimaryIconSrc from '/icon/home-primary.svg';
-import bookmarkPrimaryIconSrc from '/icon/bookmark-primary.svg';
+import { ROUTES } from '#/routes';
 
 import styles from './styles.module.scss';
-
-const ROUTES = [
-    {
-        to: '/',
-        text: 'Home',
-        iconSrc: homePrimaryIconSrc,
-    },
-    {
-        to: '/favorites',
-        text: 'Your favorites',
-        iconSrc: bookmarkPrimaryIconSrc,
-    },
-];
 
 function NavBar() {
     return (
         <div className={styles.navbar}>
-            {ROUTES.map((r) => (
-                <NavButton {...r} key={r.to} />
+            {ROUTES.filter((r) => r.link !== null).map((r) => (
+                <NavButton
+                    key={r.path}
+                    to={r.path}
+                    text={r.link.text}
+                    iconSrc={r.link.icon}
+                />
             ))}
         </div>
     );

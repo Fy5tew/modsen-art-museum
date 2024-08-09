@@ -4,7 +4,7 @@ import { PaintingList } from '#/components/PaintingList';
 import { useSearchPaintings } from '#/hooks/useSearchPaintings';
 import { FOR_YOU_QUERY, FOR_YOU_PAGES } from '#/constants';
 
-import styles from './WorksForYou.module.scss';
+import styles from './styles.module.scss';
 
 function WorksForYou() {
     const [page] = useState<number>(

@@ -1,6 +1,6 @@
 import { PaginationData } from '#/hooks/usePagination';
 
-import styles from './Pagination.module.scss';
+import styles from './styles.module.scss';
 
 type PaginationProps = {
     pagination: PaginationData;

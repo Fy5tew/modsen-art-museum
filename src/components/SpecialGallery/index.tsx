@@ -6,7 +6,7 @@ import { useDebounce } from '#/hooks/useDebounce';
 import { usePagination } from '#/hooks/usePagination';
 import { useSearchPaintings } from '#/hooks/useSearchPaintings';
 
-import styles from './SpacialGallery.module.scss';
+import styles from './styles.module.scss';
 
 function SpecialGallery() {
     const [searchPage, setSearchPage] = useState<number>(1);

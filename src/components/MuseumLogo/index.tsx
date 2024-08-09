@@ -2,7 +2,7 @@ import museumLogoShortSrc from '/logo/museum-short.svg';
 import museumLogoFullWhiteSrc from '/logo/museum-full-white.svg';
 import museumLogoFullBlackSrc from '/logo/museum-full-black.svg';
 
-import styles from './MuseumLogo.module.scss';
+import styles from './styles.module.scss';
 
 type MuseumLogoProps = {
     variant?: 'short' | 'full-white' | 'full-black';

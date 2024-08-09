@@ -2,7 +2,7 @@ import { ContentContainer } from '#/components/ContentContainer';
 import { ModsenLogo } from '#components/ModsenLogo';
 import { MuseumLogo } from '#components/MuseumLogo';
 
-import styles from './Footer.module.scss';
+import styles from './styles.module.scss';
 
 function Footer() {
     return (

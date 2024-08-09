@@ -4,7 +4,7 @@ import { PaintingList as PaintingListType } from '#/types';
 import { Painting, PaintingProps } from '#components/Painting';
 import { useFavoritesIds } from '#/hooks/useFavoritesIds';
 
-import styles from './PaintingList.module.scss';
+import styles from './styles.module.scss';
 
 type PaintingListProps = Omit<
     PaintingProps,

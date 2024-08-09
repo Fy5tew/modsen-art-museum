@@ -4,7 +4,7 @@ import { useCallback } from 'react';
 import { BookmarkButton } from '#components/BookmarkButton';
 import { Painting } from '#/types';
 
-import styles from './PaintingSmall.module.scss';
+import styles from './styles.module.scss';
 
 type PaintingSmallProps = {
     painting: Painting;

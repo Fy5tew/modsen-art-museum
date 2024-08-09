@@ -3,7 +3,7 @@ import { ContentContainer } from '#/components/ContentContainer';
 import { Header } from '#components/Header';
 import { Footer } from '#components/Footer';
 
-import styles from './PageLayout.module.scss';
+import styles from './styles.module.scss';
 
 type PageLayoutProps = {
     children: ReactNode;

@@ -5,7 +5,7 @@ import { PaintingList } from '#components/PaintingList';
 import { useDebounce } from '#/hooks/useDebounce';
 import { useSearchPaintings } from '#/hooks/useSearchPaintings';
 
-import styles from './SearchForm.module.scss';
+import styles from './styles.module.scss';
 
 function SearchForm() {
     const [searchQuery, setSearchQuery] = useState<string>('');

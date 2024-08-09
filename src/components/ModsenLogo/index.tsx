@@ -1,6 +1,6 @@
 import modsenLogoImage from '/logo/modsen.svg';
 
-import styles from './ModsenLogo.module.scss';
+import styles from './styles.module.scss';
 
 function ModsenLogo() {
     return (

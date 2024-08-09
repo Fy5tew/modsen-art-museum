@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-import styles from './NavButton.module.scss';
+import styles from './styles.module.scss';
 
 type NavButtonProps = {
     to: string;

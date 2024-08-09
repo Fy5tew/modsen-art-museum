@@ -1,4 +1,4 @@
-import styles from './IconButton.module.scss';
+import styles from './styles.module.scss';
 
 type IconButtonProps = {
     iconSrc: string;

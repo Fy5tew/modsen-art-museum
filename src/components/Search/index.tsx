@@ -1,7 +1,7 @@
 import { InputHTMLAttributes } from 'react';
 import searchNeutralIcon from '/icon/search-neutral.svg';
 
-import styles from './Serach.module.scss';
+import styles from './styles.module.scss';
 
 type SearchProps = InputHTMLAttributes<HTMLInputElement>;
 

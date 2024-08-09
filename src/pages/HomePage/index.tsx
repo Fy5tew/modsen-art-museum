@@ -3,7 +3,7 @@ import { SearchForm } from '#/components/SearchForm';
 import { SpecialGallery } from '#/components/SpecialGallery';
 import { WorksForYou } from '#/components/WorksForYou';
 
-import styles from './HomePage.module.scss';
+import styles from './styles.module.scss';
 
 function HomePage() {
     return (

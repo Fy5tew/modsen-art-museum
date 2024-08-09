@@ -4,7 +4,7 @@ import { PageDoubleHeader } from '#/components/PageDoubleHeader';
 import { PaintingList } from '#/components/PaintingList';
 import { useFavorites } from '#/hooks/useFavorites';
 import bookmarkSecondaryIconSrc from '/icon/bookmark-secondary.svg';
-import styles from './FavoritesPage.module.scss';
+import styles from './styles.module.scss';
 
 function FavoritesPage() {
     const favorites = useFavorites();

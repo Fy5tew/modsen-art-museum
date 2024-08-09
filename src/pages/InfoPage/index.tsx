@@ -6,7 +6,7 @@ import { BookmarkButton } from '#/components/BookmarkButton';
 import { useFavoritesIds } from '#/hooks/useFavoritesIds';
 import { useGetPainting } from '#/hooks/useGetPainting';
 
-import styles from './InfoPage.module.scss';
+import styles from './styles.module.scss';
 
 function InfoPage() {
     const { id } = useParams();

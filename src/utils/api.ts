@@ -10,7 +10,7 @@ import {
     APIGetPaintingListJSONResponse,
     APISearchPaintingsJSONResponse,
 } from '#/types/api';
-import { ARTIC_API_URL, ARTIC_API_IMAGE_FILE } from '#/constants';
+import { ARTIC_API_URL, ARTIC_API_IMAGE_FILE } from '#/constants/api';
 
 const PAINTING_TYPE_ID = 1;
 

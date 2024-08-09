@@ -1,5 +1,5 @@
 import { useState, useEffect, useMemo, useCallback } from 'react';
-import { FAVORITES_PAINTINGS_STORAGE_KEY } from '#/constants';
+import { FAVORITES_PAINTINGS_STORAGE_KEY } from '#/constants/storage';
 import {
     getFavoritePaintingsIds,
     addFavoritePaintingId,

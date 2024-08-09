@@ -4,8 +4,8 @@ import { BrowserRouter } from 'react-router-dom';
 
 import { App } from './App';
 
-import './reset.scss';
-import './index.scss';
+import './styles/reset.scss';
+import './styles/global.scss';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
     <React.StrictMode>

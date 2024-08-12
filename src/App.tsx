@@ -5,8 +5,12 @@ function App() {
     return (
         <BrowserRouter>
             <Routes>
-                {ROUTES.map((r) => (
-                    <Route key={r.path} path={r.path} Component={r.component} />
+                {Object.values(ROUTES).map((r) => (
+                    <Route
+                        key={r.basePath}
+                        path={r.getRoutePath()}
+                        Component={r.component}
+                    />
                 ))}
             </Routes>
         </BrowserRouter>

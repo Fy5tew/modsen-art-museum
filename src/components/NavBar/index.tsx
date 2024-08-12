@@ -6,14 +6,16 @@ import styles from './styles.module.scss';
 function NavBar() {
     return (
         <div className={styles.navbar}>
-            {ROUTES.filter((r) => r.link !== null).map((r) => (
-                <NavButton
-                    key={r.path}
-                    to={r.path}
-                    text={r.link.text}
-                    iconSrc={r.link.icon}
-                />
-            ))}
+            {Object.values(ROUTES)
+                .filter((r) => r.link !== null)
+                .map((r) => (
+                    <NavButton
+                        key={r.basePath}
+                        to={r.getPath()}
+                        text={r.link.text}
+                        iconSrc={r.link.icon}
+                    />
+                ))}
         </div>
     );
 }

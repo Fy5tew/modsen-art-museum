@@ -4,7 +4,7 @@ import { MuseumLogo } from '#components/MuseumLogo';
 
 import styles from './styles.module.scss';
 
-function Footer() {
+export function Footer() {
     return (
         <ContentContainer className={styles.footer}>
             <MuseumLogo variant="full-black" />
@@ -12,5 +12,3 @@ function Footer() {
         </ContentContainer>
     );
 }
-
-export { Footer };

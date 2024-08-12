@@ -4,11 +4,11 @@ import museumLogoShortSrc from '/logo/museum-short.svg';
 
 import styles from './styles.module.scss';
 
-type MuseumLogoProps = {
+export type MuseumLogoProps = {
     variant?: 'short' | 'full-white' | 'full-black';
 };
 
-function MuseumLogo({ variant = 'short' }: MuseumLogoProps) {
+export function MuseumLogo({ variant = 'short' }: MuseumLogoProps) {
     const logoSrc = {
         'short': museumLogoShortSrc,
         'full-white': museumLogoFullWhiteSrc,
@@ -21,6 +21,3 @@ function MuseumLogo({ variant = 'short' }: MuseumLogoProps) {
         </div>
     );
 }
-
-export type { MuseumLogoProps };
-export { MuseumLogo };

@@ -2,13 +2,13 @@ import { Link } from 'react-router-dom';
 
 import styles from './styles.module.scss';
 
-type NavButtonProps = {
+export type NavButtonProps = {
     to: string;
     text: string;
     iconSrc: string;
 };
 
-function NavButton({ to, text, iconSrc }: NavButtonProps) {
+export function NavButton({ to, text, iconSrc }: NavButtonProps) {
     return (
         <Link className={styles.link} to={to}>
             <img className={styles.icon} src={iconSrc} alt="" />
@@ -16,6 +16,3 @@ function NavButton({ to, text, iconSrc }: NavButtonProps) {
         </Link>
     );
 }
-
-export type { NavButtonProps };
-export { NavButton };

@@ -9,7 +9,7 @@ import { useGetPainting } from '#hooks/useGetPainting';
 
 import styles from './styles.module.scss';
 
-function InfoPage() {
+export function InfoPage() {
     const { id } = useParams();
     const [paintingId] = useState(Number.parseInt(id as string));
     const painting = useGetPainting(paintingId);
@@ -101,5 +101,3 @@ function InfoPage() {
         </PageLayout>
     );
 }
-
-export { InfoPage };

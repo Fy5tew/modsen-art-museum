@@ -6,11 +6,11 @@ import { Header } from '#components/Header';
 
 import styles from './styles.module.scss';
 
-type PageLayoutProps = {
+export type PageLayoutProps = {
     children: ReactNode;
 };
 
-function PageLayout({ children }: PageLayoutProps) {
+export function PageLayout({ children }: PageLayoutProps) {
     return (
         <div className={styles.pageWrapper}>
             <div className={styles.headerWrapper}>
@@ -29,6 +29,3 @@ function PageLayout({ children }: PageLayoutProps) {
         </div>
     );
 }
-
-export type { PageLayoutProps };
-export { PageLayout };

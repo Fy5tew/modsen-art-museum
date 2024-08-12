@@ -2,12 +2,15 @@ import { ReactNode } from 'react';
 
 import styles from './styles.module.scss';
 
-type PageDoubleHeaderProps = {
+export type PageDoubleHeaderProps = {
     mainHeader: ReactNode;
     subHeader: ReactNode;
 };
 
-function PageDoubleHeader({ mainHeader, subHeader }: PageDoubleHeaderProps) {
+export function PageDoubleHeader({
+    mainHeader,
+    subHeader,
+}: PageDoubleHeaderProps) {
     return (
         <div className={styles.doubleHeader}>
             <h4 className={styles.subHeader}>{subHeader}</h4>
@@ -15,6 +18,3 @@ function PageDoubleHeader({ mainHeader, subHeader }: PageDoubleHeaderProps) {
         </div>
     );
 }
-
-export type { PageDoubleHeaderProps };
-export { PageDoubleHeader };

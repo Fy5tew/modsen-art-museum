@@ -1,7 +1,7 @@
 import { useFavoritesIds } from './useFavoritesIds';
 import { useGetPaintingList } from './useGetPaintingList';
 
-function useFavorites() {
+export function useFavorites() {
     const { favoritesIds, add, remove, clear } = useFavoritesIds();
     const favorites = useGetPaintingList(favoritesIds);
 
@@ -12,5 +12,3 @@ function useFavorites() {
         clear,
     };
 }
-
-export { useFavorites };

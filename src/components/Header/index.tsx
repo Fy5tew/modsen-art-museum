@@ -4,7 +4,7 @@ import { NavBar } from '#components/NavBar';
 
 import styles from './styles.module.scss';
 
-function Header() {
+export function Header() {
     return (
         <ContentContainer className={styles.header}>
             <MuseumLogo variant="full-white" />
@@ -12,5 +12,3 @@ function Header() {
         </ContentContainer>
     );
 }
-
-export { Header };

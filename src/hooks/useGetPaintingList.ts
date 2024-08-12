@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { PaintingList } from '#types/api';
 import { getPaintingList } from '#utils/api';
 
-function useGetPaintingList(paintingIds: number[]): PaintingList | null {
+export function useGetPaintingList(paintingIds: number[]): PaintingList | null {
     const [paintings, setPaintings] = useState<PaintingList | null>(null);
 
     useEffect(() => {
@@ -14,5 +14,3 @@ function useGetPaintingList(paintingIds: number[]): PaintingList | null {
 
     return paintings;
 }
-
-export { useGetPaintingList };

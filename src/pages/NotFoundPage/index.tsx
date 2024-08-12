@@ -1,7 +1,7 @@
 import { PageHeader } from '#components/PageHeader';
 import { PageLayout } from '#components/PageLayout';
 
-function NotFoundPage() {
+export function NotFoundPage() {
     return (
         <PageLayout>
             <PageHeader>
@@ -11,5 +11,3 @@ function NotFoundPage() {
         </PageLayout>
     );
 }
-
-export { NotFoundPage };

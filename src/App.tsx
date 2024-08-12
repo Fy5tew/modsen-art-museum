@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import { ROUTES } from './routes';
 
-function App() {
+export function App() {
     return (
         <BrowserRouter>
             <Routes>
@@ -17,5 +17,3 @@ function App() {
         </BrowserRouter>
     );
 }
-
-export { App };

@@ -2,11 +2,11 @@ import { PaginationData } from '#hooks/usePagination';
 
 import styles from './styles.module.scss';
 
-type PaginationProps = {
+export type PaginationProps = {
     pagination: PaginationData;
 };
 
-function Pagination({ pagination }: PaginationProps) {
+export function Pagination({ pagination }: PaginationProps) {
     return (
         <div className={styles.pagination}>
             {pagination.hasPrev && (
@@ -44,6 +44,3 @@ function Pagination({ pagination }: PaginationProps) {
         </div>
     );
 }
-
-export type { PaginationProps };
-export { Pagination };

@@ -4,9 +4,9 @@ import searchNeutralIcon from '/icon/search-neutral.svg';
 
 import styles from './styles.module.scss';
 
-type SearchProps = InputHTMLAttributes<HTMLInputElement>;
+export type SearchProps = InputHTMLAttributes<HTMLInputElement>;
 
-function Search({ ...props }: SearchProps) {
+export function Search({ ...props }: SearchProps) {
     return (
         <div className={styles.search}>
             <input className={styles.input} {...props} />
@@ -14,6 +14,3 @@ function Search({ ...props }: SearchProps) {
         </div>
     );
 }
-
-export type { SearchProps };
-export { Search };

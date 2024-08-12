@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { Pagination, Painting, PaintingListResult } from '#types/api';
 import { searchPaintings } from '#utils/api';
 
-function useSearchPaintings(
+export function useSearchPaintings(
     searchQuery?: string,
     limit?: number,
     page?: number
@@ -18,5 +18,3 @@ function useSearchPaintings(
 
     return [result?.paintingList ?? [], result?.pagination ?? null];
 }
-
-export { useSearchPaintings };

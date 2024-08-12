@@ -8,7 +8,7 @@ import { useSearchPaintings } from '#hooks/useSearchPaintings';
 
 import styles from './styles.module.scss';
 
-function SearchForm() {
+export function SearchForm() {
     const [searchQuery, setSearchQuery] = useState<string>('');
     const debauncedSearchQuery = useDebounce(searchQuery, 500);
     const [paintings] = useSearchPaintings(debauncedSearchQuery);
@@ -53,5 +53,3 @@ function SearchForm() {
         </div>
     );
 }
-
-export { SearchForm };

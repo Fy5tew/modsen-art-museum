@@ -3,7 +3,7 @@ import { NavButton } from '#components/NavButton';
 
 import styles from './styles.module.scss';
 
-function NavBar() {
+export function NavBar() {
     return (
         <div className={styles.navbar}>
             {Object.values(ROUTES)
@@ -19,5 +19,3 @@ function NavBar() {
         </div>
     );
 }
-
-export { NavBar };

@@ -8,7 +8,7 @@ import {
     removeFavoritePaintingId,
 } from '#utils/favorites';
 
-function useFavoritesIds() {
+export function useFavoritesIds() {
     const [favoritesIds, setFavoritesIds] = useState<number[]>(
         getFavoritePaintingsIds()
     );
@@ -41,5 +41,3 @@ function useFavoritesIds() {
         clear: clearFavoritePaintingsIds,
     };
 }
-
-export { useFavoritesIds };

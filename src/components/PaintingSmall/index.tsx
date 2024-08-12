@@ -7,7 +7,7 @@ import { Painting } from '#types/api';
 
 import styles from './styles.module.scss';
 
-type PaintingSmallProps = {
+export type PaintingSmallProps = {
     painting: Painting;
     // eslint-disable-next-line no-unused-vars
     isFavorite: (paintingId: number) => boolean;
@@ -19,7 +19,7 @@ type PaintingSmallProps = {
     onFavoriteRemove: (paintingId: number) => void;
 };
 
-function PaintingSmall({
+export function PaintingSmall({
     painting,
     isFavorite,
     onClick,
@@ -66,6 +66,3 @@ function PaintingSmall({
         </div>
     );
 }
-
-export type { PaintingSmallProps };
-export { PaintingSmall };

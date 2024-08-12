@@ -7,7 +7,7 @@ import { useFavorites } from '#hooks/useFavorites';
 
 import styles from './styles.module.scss';
 
-function FavoritesPage() {
+export function FavoritesPage() {
     const favorites = useFavorites();
 
     return (
@@ -46,5 +46,3 @@ function FavoritesPage() {
         </PageLayout>
     );
 }
-
-export { FavoritesPage };

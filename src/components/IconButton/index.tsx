@@ -1,13 +1,13 @@
 import styles from './styles.module.scss';
 
-type IconButtonProps = {
+export type IconButtonProps = {
     iconSrc: string;
     alt?: string;
     isActive?: boolean;
     onClick: () => void;
 };
 
-function IconButton({
+export function IconButton({
     iconSrc,
     alt,
     isActive = false,
@@ -23,6 +23,3 @@ function IconButton({
         </button>
     );
 }
-
-export type { IconButtonProps };
-export { IconButton };

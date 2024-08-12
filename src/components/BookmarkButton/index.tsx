@@ -1,9 +1,9 @@
 import bookmarkSecondaryIconSrc from '/icon/bookmark-primary.svg';
 import { IconButton, IconButtonProps } from '#components/IconButton';
 
-type BookmarkButtonProps = Omit<IconButtonProps, 'iconSrc' | 'alt'>;
+export type BookmarkButtonProps = Omit<IconButtonProps, 'iconSrc' | 'alt'>;
 
-function BookmarkButton({ isActive, onClick }: BookmarkButtonProps) {
+export function BookmarkButton({ isActive, onClick }: BookmarkButtonProps) {
     return (
         <IconButton
             iconSrc={bookmarkSecondaryIconSrc}
@@ -13,6 +13,3 @@ function BookmarkButton({ isActive, onClick }: BookmarkButtonProps) {
         />
     );
 }
-
-export type { BookmarkButtonProps };
-export { BookmarkButton };

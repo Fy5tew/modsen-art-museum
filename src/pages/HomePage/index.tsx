@@ -5,7 +5,7 @@ import { WorksForYou } from '#components/WorksForYou';
 
 import styles from './styles.module.scss';
 
-function HomePage() {
+export function HomePage() {
     return (
         <PageLayout>
             <div className={styles.wrapper}>
@@ -16,5 +16,3 @@ function HomePage() {
         </PageLayout>
     );
 }
-
-export { HomePage };

@@ -2,18 +2,18 @@ import { ReactNode } from 'react';
 
 import styles from './styles.module.scss';
 
-type ContentContainerProps = {
+export type ContentContainerProps = {
     className?: string;
     children: ReactNode;
 };
 
-function ContentContainer({ className, children }: ContentContainerProps) {
+export function ContentContainer({
+    className,
+    children,
+}: ContentContainerProps) {
     return (
         <div className={[styles.container, className].join(' ')}>
             {children}
         </div>
     );
 }
-
-export type { ContentContainerProps };
-export { ContentContainer };

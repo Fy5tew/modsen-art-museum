@@ -9,7 +9,7 @@ import { useSearchPaintings } from '#hooks/useSearchPaintings';
 
 import styles from './styles.module.scss';
 
-function SpecialGallery() {
+export function SpecialGallery() {
     const [searchPage, setSearchPage] = useState<number>(1);
     const debauncedSearchPage = useDebounce(searchPage, 500);
     const [paintings, paginationInfo] = useSearchPaintings(
@@ -40,5 +40,3 @@ function SpecialGallery() {
         </div>
     );
 }
-
-export { SpecialGallery };

@@ -7,7 +7,7 @@ import { useSearchPaintings } from '#hooks/useSearchPaintings';
 
 import styles from './styles.module.scss';
 
-function WorksForYou() {
+export function WorksForYou() {
     const [page] = useState<number>(
         Math.floor(Math.random() * FOR_YOU_PAGES) + 1
     );
@@ -23,5 +23,3 @@ function WorksForYou() {
         </div>
     );
 }
-
-export { WorksForYou };

@@ -8,14 +8,14 @@ import { PaintingList as PaintingListType } from '#types/api';
 
 import styles from './styles.module.scss';
 
-type PaintingListProps = Omit<
+export type PaintingListProps = Omit<
     PaintingProps,
     'painting' | 'isFavorite' | 'onClick' | 'onFavoriteAdd' | 'onFavoriteRemove'
 > & {
     paintings: PaintingListType;
 };
 
-function PaintingList({ paintings, ...props }: PaintingListProps) {
+export function PaintingList({ paintings, ...props }: PaintingListProps) {
     const navigate = useNavigate();
     const favorites = useFavoritesIds();
 
@@ -42,6 +42,3 @@ function PaintingList({ paintings, ...props }: PaintingListProps) {
         </div>
     );
 }
-
-export type { PaintingListProps };
-export { PaintingList };

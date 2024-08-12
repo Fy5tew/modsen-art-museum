@@ -1,8 +1,9 @@
-import { useState, useEffect } from 'react';
-import { PaintingListResult, Painting, Pagination } from '#/types';
-import { searchPaintings } from '#/utils/api';
+import { useEffect, useState } from 'react';
 
-function useSearchPaintings(
+import { Pagination, Painting, PaintingListResult } from '#types/api';
+import { searchPaintings } from '#utils/api';
+
+export function useSearchPaintings(
     searchQuery?: string,
     limit?: number,
     page?: number
@@ -17,5 +18,3 @@ function useSearchPaintings(
 
     return [result?.paintingList ?? [], result?.pagination ?? null];
 }
-
-export { useSearchPaintings };

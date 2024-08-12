@@ -1,14 +1,14 @@
 import { ContentContainer } from '#components/ContentContainer';
+import { ModsenLogo } from '#components/ModsenLogo';
 import { MuseumLogo } from '#components/MuseumLogo';
-import { NavBar } from '#components/NavBar';
 
 import styles from './styles.module.scss';
 
-export function Header() {
+export function Footer() {
     return (
-        <ContentContainer className={styles.header}>
-            <MuseumLogo variant="full-white" />
-            <NavBar />
+        <ContentContainer className={styles.footer}>
+            <MuseumLogo variant="full-black" />
+            <ModsenLogo />
         </ContentContainer>
     );
 }

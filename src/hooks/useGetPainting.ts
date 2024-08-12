@@ -1,8 +1,9 @@
-import { useState, useEffect } from 'react';
-import { Painting } from '#/types';
-import { getPainting } from '#/utils/api';
+import { useEffect, useState } from 'react';
 
-function useGetPainting(paintingId: number): Painting | null {
+import { Painting } from '#types/api';
+import { getPainting } from '#utils/api';
+
+export function useGetPainting(paintingId: number): Painting | null {
     const [painting, setPainting] = useState<Painting | null>(null);
 
     useEffect(() => {
@@ -13,5 +14,3 @@ function useGetPainting(paintingId: number): Painting | null {
 
     return painting;
 }
-
-export { useGetPainting };

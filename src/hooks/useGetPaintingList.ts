@@ -1,8 +1,9 @@
-import { useState, useEffect } from 'react';
-import { PaintingList } from '#/types';
-import { getPaintingList } from '#/utils/api';
+import { useEffect, useState } from 'react';
 
-function useGetPaintingList(paintingIds: number[]): PaintingList | null {
+import { PaintingList } from '#types/api';
+import { getPaintingList } from '#utils/api';
+
+export function useGetPaintingList(paintingIds: number[]): PaintingList | null {
     const [paintings, setPaintings] = useState<PaintingList | null>(null);
 
     useEffect(() => {
@@ -13,5 +14,3 @@ function useGetPaintingList(paintingIds: number[]): PaintingList | null {
 
     return paintings;
 }
-
-export { useGetPaintingList };

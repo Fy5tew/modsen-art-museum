@@ -1,7 +1,8 @@
-import { useState, useEffect, useMemo, useCallback } from 'react';
-import { generatePagination } from '#/utils/pagination';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 
-type PaginationData = {
+import { generatePagination } from '#utils/pagination';
+
+export type PaginationData = {
     start: number;
     end: number;
     current: number;
@@ -16,7 +17,7 @@ type PaginationData = {
     toEnd: () => void;
 };
 
-function usePagination(
+export function usePagination(
     startPage: number,
     endPage: number,
     pagesDisplay: number
@@ -74,6 +75,3 @@ function usePagination(
         toEnd: toEnd,
     };
 }
-
-export type { PaginationData };
-export { usePagination };

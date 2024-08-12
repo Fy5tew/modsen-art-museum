@@ -1,4 +1,4 @@
-import { ARTIC_API_IMAGE_FILE, ARTIC_API_URL } from '#/constants/api';
+import { ARTIC_API_IMAGE_FILE, ARTIC_API_URL } from '#constants/api';
 import {
     APIConfigJSON,
     APIGetPaintingJSONResponse,
@@ -10,7 +10,7 @@ import {
     Painting,
     PaintingList,
     PaintingListResult,
-} from '#/types/api';
+} from '#types/api';
 
 const PAINTING_TYPE_ID = 1;
 

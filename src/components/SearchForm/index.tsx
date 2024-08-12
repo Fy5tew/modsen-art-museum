@@ -1,10 +1,10 @@
 import { ChangeEvent, useCallback, useState } from 'react';
 
-import { PageHeader } from '#/components/PageHeader';
-import { Search } from '#/components/Search';
-import { useDebounce } from '#/hooks/useDebounce';
-import { useSearchPaintings } from '#/hooks/useSearchPaintings';
+import { PageHeader } from '#components/PageHeader';
 import { PaintingList } from '#components/PaintingList';
+import { Search } from '#components/Search';
+import { useDebounce } from '#hooks/useDebounce';
+import { useSearchPaintings } from '#hooks/useSearchPaintings';
 
 import styles from './styles.module.scss';
 

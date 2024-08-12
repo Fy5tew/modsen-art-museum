@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 
-import { ContentContainer } from '#/components/ContentContainer';
+import { ContentContainer } from '#components/ContentContainer';
 import { Footer } from '#components/Footer';
 import { Header } from '#components/Header';
 

@@ -1,12 +1,12 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
 
-import { FAVORITES_PAINTINGS_STORAGE_KEY } from '#/constants/storage';
+import { FAVORITES_PAINTINGS_STORAGE_KEY } from '#constants/storage';
 import {
     addFavoritePaintingId,
     clearFavoritePaintingsIds,
     getFavoritePaintingsIds,
     removeFavoritePaintingId,
-} from '#/utils/favorites';
+} from '#utils/favorites';
 
 function useFavoritesIds() {
     const [favoritesIds, setFavoritesIds] = useState<number[]>(

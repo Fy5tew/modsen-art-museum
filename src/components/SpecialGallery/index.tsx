@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react';
 
-import { PageDoubleHeader } from '#/components/PageDoubleHeader';
-import { Pagination } from '#/components/Pagination';
-import { PaintingList } from '#/components/PaintingList';
-import { useDebounce } from '#/hooks/useDebounce';
-import { usePagination } from '#/hooks/usePagination';
-import { useSearchPaintings } from '#/hooks/useSearchPaintings';
+import { PageDoubleHeader } from '#components/PageDoubleHeader';
+import { Pagination } from '#components/Pagination';
+import { PaintingList } from '#components/PaintingList';
+import { useDebounce } from '#hooks/useDebounce';
+import { usePagination } from '#hooks/usePagination';
+import { useSearchPaintings } from '#hooks/useSearchPaintings';
 
 import styles from './styles.module.scss';
 

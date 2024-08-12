@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
-import { Painting } from '#/types/types';
-import { getPainting } from '#/utils/api';
+import { Painting } from '#types/api';
+import { getPainting } from '#utils/api';
 
 function useGetPainting(paintingId: number): Painting | null {
     const [painting, setPainting] = useState<Painting | null>(null);

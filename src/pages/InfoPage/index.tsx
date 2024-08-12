@@ -1,11 +1,11 @@
 import { useCallback, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
-import { BookmarkButton } from '#/components/BookmarkButton';
-import { PageHeader } from '#/components/PageHeader';
-import { PageLayout } from '#/components/PageLayout';
-import { useFavoritesIds } from '#/hooks/useFavoritesIds';
-import { useGetPainting } from '#/hooks/useGetPainting';
+import { BookmarkButton } from '#components/BookmarkButton';
+import { PageHeader } from '#components/PageHeader';
+import { PageLayout } from '#components/PageLayout';
+import { useFavoritesIds } from '#hooks/useFavoritesIds';
+import { useGetPainting } from '#hooks/useGetPainting';
 
 import styles from './styles.module.scss';
 

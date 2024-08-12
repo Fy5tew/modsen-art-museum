@@ -1,4 +1,4 @@
-import { ContentContainer } from '#/components/ContentContainer';
+import { ContentContainer } from '#components/ContentContainer';
 import { MuseumLogo } from '#components/MuseumLogo';
 import { NavBar } from '#components/NavBar';
 

@@ -1,4 +1,4 @@
-import { ContentContainer } from '#/components/ContentContainer';
+import { ContentContainer } from '#components/ContentContainer';
 import { ModsenLogo } from '#components/ModsenLogo';
 import { MuseumLogo } from '#components/MuseumLogo';
 

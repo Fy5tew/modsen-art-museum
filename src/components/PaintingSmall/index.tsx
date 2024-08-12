@@ -2,8 +2,8 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import { useCallback } from 'react';
 
-import { Painting } from '#/types/api';
 import { BookmarkButton } from '#components/BookmarkButton';
+import { Painting } from '#types/api';
 
 import styles from './styles.module.scss';
 

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
-import { Pagination, Painting, PaintingListResult } from '#/types/types';
-import { searchPaintings } from '#/utils/api';
+import { Pagination, Painting, PaintingListResult } from '#types/api';
+import { searchPaintings } from '#utils/api';
 
 function useSearchPaintings(
     searchQuery?: string,

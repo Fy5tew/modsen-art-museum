@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
-import { PaintingList } from '#/types/types';
-import { getPaintingList } from '#/utils/api';
+import { PaintingList } from '#types/api';
+import { getPaintingList } from '#utils/api';
 
 function useGetPaintingList(paintingIds: number[]): PaintingList | null {
     const [paintings, setPaintings] = useState<PaintingList | null>(null);

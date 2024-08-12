@@ -1,4 +1,4 @@
-import { PaginationData } from '#/hooks/usePagination';
+import { PaginationData } from '#hooks/usePagination';
 
 import styles from './styles.module.scss';
 

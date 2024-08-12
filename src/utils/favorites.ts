@@ -1,4 +1,4 @@
-import { FAVORITES_PAINTINGS_STORAGE_KEY } from '#/constants/storage';
+import { FAVORITES_PAINTINGS_STORAGE_KEY } from '#constants/storage';
 
 const LIST_SEPARATOR = ',';
 

@@ -1,9 +1,9 @@
 import bookmarkSecondaryIconSrc from '/icon/bookmark-secondary.svg';
-import { PageDoubleHeader } from '#/components/PageDoubleHeader';
-import { PageHeader } from '#/components/PageHeader';
-import { PageLayout } from '#/components/PageLayout';
-import { PaintingList } from '#/components/PaintingList';
-import { useFavorites } from '#/hooks/useFavorites';
+import { PageDoubleHeader } from '#components/PageDoubleHeader';
+import { PageHeader } from '#components/PageHeader';
+import { PageLayout } from '#components/PageLayout';
+import { PaintingList } from '#components/PaintingList';
+import { useFavorites } from '#hooks/useFavorites';
 
 import styles from './styles.module.scss';
 

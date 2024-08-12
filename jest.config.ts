@@ -15,6 +15,8 @@ export default {
         '\\.(css|less|sass|scss)$': 'identity-obj-proxy',
         '^.+\\.svg$': 'jest-transformer-svg',
         '^#/(.*)$': '<rootDir>/src/$1',
+        '^#constants/(.*)$': '<rootDir>/src/constants/$1',
+        '^#types/(.*)$': '<rootDir>/src/types/$1',
         '^#components/(.*)$': '<rootDir>/src/components/$1',
         '^#pages/(.*)$': '<rootDir>/src/pages/$1',
         '^#hooks/(.*)$': '<rootDir>/src/hooks/$1',

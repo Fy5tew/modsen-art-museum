@@ -1,7 +1,8 @@
 import { ReactNode } from 'react';
+
 import { ContentContainer } from '#/components/ContentContainer';
-import { Header } from '#components/Header';
 import { Footer } from '#components/Footer';
+import { Header } from '#components/Header';
 
 import styles from './styles.module.scss';
 

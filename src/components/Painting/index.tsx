@@ -1,5 +1,5 @@
-import { PaintingSmall, PaintingSmallProps } from '#components/PaintingSmall';
 import { PaintingBig, PaintingBigProps } from '#components/PaintingBig';
+import { PaintingSmall, PaintingSmallProps } from '#components/PaintingSmall';
 
 type PaintingProps = PaintingSmallProps &
     PaintingBigProps & {

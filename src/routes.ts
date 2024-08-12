@@ -1,9 +1,8 @@
-import homePrimaryIconSrc from '/icon/home-primary.svg';
 import bookmarkPrimaryIconSrc from '/icon/bookmark-primary.svg';
-
+import homePrimaryIconSrc from '/icon/home-primary.svg';
+import { FavoritesPage } from '#pages/FavoritesPage';
 import { HomePage } from '#pages/HomePage';
 import { InfoPage } from '#pages/InfoPage';
-import { FavoritesPage } from '#pages/FavoritesPage';
 import { NotFoundPage } from '#pages/NotFoundPage';
 
 export const ROUTES = {

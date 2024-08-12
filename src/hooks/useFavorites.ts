@@ -1,5 +1,5 @@
-import { useGetPaintingList } from './useGetPaintingList';
 import { useFavoritesIds } from './useFavoritesIds';
+import { useGetPaintingList } from './useGetPaintingList';
 
 function useFavorites() {
     const { favoritesIds, add, remove, clear } = useFavoritesIds();

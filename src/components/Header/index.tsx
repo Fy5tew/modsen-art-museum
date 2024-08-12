@@ -1,6 +1,6 @@
 import { ContentContainer } from '#/components/ContentContainer';
-import { NavBar } from '#components/NavBar';
 import { MuseumLogo } from '#components/MuseumLogo';
+import { NavBar } from '#components/NavBar';
 
 import styles from './styles.module.scss';
 

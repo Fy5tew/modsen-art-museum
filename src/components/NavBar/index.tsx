@@ -1,5 +1,5 @@
-import { NavButton } from '#components/NavButton';
 import { ROUTES } from '#/routes';
+import { NavButton } from '#components/NavButton';
 
 import styles from './styles.module.scss';
 

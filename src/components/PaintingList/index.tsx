@@ -1,9 +1,10 @@
 import { useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
+
+import { ROUTES } from '#/routes';
 import { PaintingList as PaintingListType } from '#/types/api';
 import { Painting, PaintingProps } from '#components/Painting';
 import { useFavoritesIds } from '#hooks/useFavoritesIds';
-import { ROUTES } from '#/routes';
 
 import styles from './styles.module.scss';
 

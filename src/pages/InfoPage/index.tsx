@@ -1,8 +1,9 @@
-import { useState, useCallback } from 'react';
+import { useCallback, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { PageLayout } from '#/components/PageLayout';
-import { PageHeader } from '#/components/PageHeader';
+
 import { BookmarkButton } from '#/components/BookmarkButton';
+import { PageHeader } from '#/components/PageHeader';
+import { PageLayout } from '#/components/PageLayout';
 import { useFavoritesIds } from '#/hooks/useFavoritesIds';
 import { useGetPainting } from '#/hooks/useGetPainting';
 

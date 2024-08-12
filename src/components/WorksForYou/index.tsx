@@ -1,8 +1,9 @@
 import { useState } from 'react';
+
 import { PageDoubleHeader } from '#/components/PageDoubleHeader';
 import { PaintingList } from '#/components/PaintingList';
+import { FOR_YOU_PAGES, FOR_YOU_QUERY } from '#/constants/recomendations';
 import { useSearchPaintings } from '#/hooks/useSearchPaintings';
-import { FOR_YOU_QUERY, FOR_YOU_PAGES } from '#/constants/recomendations';
 
 import styles from './styles.module.scss';
 

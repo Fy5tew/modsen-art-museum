@@ -1,5 +1,6 @@
-import { useState, useEffect, useMemo, useCallback } from 'react';
-import { generatePagination } from '#/utils/pagination';
+import { useCallback, useEffect, useMemo, useState } from 'react';
+
+import { generatePagination } from '#utils/pagination';
 
 type PaginationData = {
     start: number;

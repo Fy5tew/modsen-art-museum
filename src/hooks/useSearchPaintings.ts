@@ -1,5 +1,6 @@
-import { useState, useEffect } from 'react';
-import { PaintingListResult, Painting, Pagination } from '#/types/types';
+import { useEffect, useState } from 'react';
+
+import { Pagination, Painting, PaintingListResult } from '#/types/types';
 import { searchPaintings } from '#/utils/api';
 
 function useSearchPaintings(

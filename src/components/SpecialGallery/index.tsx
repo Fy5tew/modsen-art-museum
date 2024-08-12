@@ -1,4 +1,5 @@
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
+
 import { PageDoubleHeader } from '#/components/PageDoubleHeader';
 import { Pagination } from '#/components/Pagination';
 import { PaintingList } from '#/components/PaintingList';

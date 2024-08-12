@@ -1,4 +1,5 @@
 import { InputHTMLAttributes } from 'react';
+
 import searchNeutralIcon from '/icon/search-neutral.svg';
 
 import styles from './styles.module.scss';

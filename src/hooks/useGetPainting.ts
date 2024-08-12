@@ -1,4 +1,5 @@
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
+
 import { Painting } from '#/types/types';
 import { getPainting } from '#/utils/api';
 

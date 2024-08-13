@@ -1,6 +1,8 @@
 .painting {
     background-color: transparent;
 
+    max-width: 600px;
+
     > .imageSection {
         position: relative;
         z-index: 0;

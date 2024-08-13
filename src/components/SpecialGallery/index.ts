@@ -1,1 +1,0 @@
-export { SpecialGallery } from './SpecialGallery';

@@ -1,16 +1,16 @@
+import { ARTIC_API_IMAGE_FILE, ARTIC_API_URL } from '#constants/api';
 import {
+    APIConfigJSON,
+    APIGetPaintingJSONResponse,
+    APIGetPaintingListJSONResponse,
+    APIPaginationJSON,
+    APIPaintingJSON,
+    APISearchPaintingsJSONResponse,
     Pagination,
     Painting,
     PaintingList,
     PaintingListResult,
-    APIPaginationJSON,
-    APIPaintingJSON,
-    APIConfigJSON,
-    APIGetPaintingJSONResponse,
-    APIGetPaintingListJSONResponse,
-    APISearchPaintingsJSONResponse,
-} from '#/types';
-import { ARTIC_API_URL, ARTIC_API_IMAGE_FILE } from '#/constants';
+} from '#types/api';
 
 const PAINTING_TYPE_ID = 1;
 

@@ -1,19 +1,22 @@
-import { Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-import { HomePage } from '#pages/HomePage';
-import { InfoPage } from '#pages/InfoPage';
-import { FavoritesPage } from '#pages/FavoritesPage';
-import { NotFoundPage } from '#pages/NotFoundPage';
+import { MenuContextProvider } from './contexts/MenuContext';
+import { ROUTES } from './routes';
 
-function App() {
+export function App() {
     return (
-        <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/info/:id" element={<InfoPage />} />
-            <Route path="/favorites" element={<FavoritesPage />} />
-            <Route path="*" element={<NotFoundPage />} />
-        </Routes>
+        <MenuContextProvider>
+            <BrowserRouter>
+                <Routes>
+                    {Object.values(ROUTES).map((r) => (
+                        <Route
+                            key={r.basePath}
+                            path={r.getRoutePath()}
+                            Component={r.component}
+                        />
+                    ))}
+                </Routes>
+            </BrowserRouter>
+        </MenuContextProvider>
     );
 }
-
-export { App };

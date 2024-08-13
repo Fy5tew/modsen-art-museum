@@ -22,8 +22,11 @@
         "baseUrl": ".",
         "paths": {
             "#/*": ["./src/*", "./dist/*", ""],
+            "#constants/*": ["./src/constants/*"],
+            "#types/*": ["./src/types/*"],
             "#components/*": ["./src/components/*"],
             "#pages/*": ["./src/pages/*"],
+            "#contexts/*": ["./src/contexts/*"],
             "#hooks/*": ["./src/hooks/*"],
             "#utils/*": ["./src/utils/*"]
         },

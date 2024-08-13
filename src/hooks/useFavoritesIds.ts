@@ -1,13 +1,14 @@
-import { useState, useEffect, useMemo, useCallback } from 'react';
-import { FAVORITES_PAINTINGS_STORAGE_KEY } from '#/constants';
-import {
-    getFavoritePaintingsIds,
-    addFavoritePaintingId,
-    removeFavoritePaintingId,
-    clearFavoritePaintingsIds,
-} from '#/utils/favorites';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 
-function useFavoritesIds() {
+import { FAVORITES_PAINTINGS_STORAGE_KEY } from '#constants/storage';
+import {
+    addFavoritePaintingId,
+    clearFavoritePaintingsIds,
+    getFavoritePaintingsIds,
+    removeFavoritePaintingId,
+} from '#utils/favorites';
+
+export function useFavoritesIds() {
     const [favoritesIds, setFavoritesIds] = useState<number[]>(
         getFavoritePaintingsIds()
     );
@@ -40,5 +41,3 @@ function useFavoritesIds() {
         clear: clearFavoritePaintingsIds,
     };
 }
-
-export { useFavoritesIds };

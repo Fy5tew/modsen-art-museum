@@ -1,1 +1,0 @@
-export { InfoPage } from './InfoPage';

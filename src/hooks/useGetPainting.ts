@@ -1,17 +1,20 @@
-import { useState, useEffect } from 'react';
-import { Painting } from '#/types';
-import { getPainting } from '#/utils/api';
+import { useEffect, useState } from 'react';
 
-function useGetPainting(paintingId: number): Painting | null {
+import { useAsyncError } from '#hooks/useAsyncError';
+import { Painting } from '#types/api';
+import { getPainting } from '#utils/api';
+
+export function useGetPainting(paintingId: number): Painting | null {
+    const throwError = useAsyncError();
     const [painting, setPainting] = useState<Painting | null>(null);
 
     useEffect(() => {
-        (async () => {
-            setPainting(await getPainting(paintingId));
+        (() => {
+            getPainting(paintingId)
+                .then((painting) => setPainting(painting))
+                .catch((error) => throwError(error));
         })();
-    }, [paintingId]);
+    }, [paintingId, throwError]);
 
     return painting;
 }
-
-export { useGetPainting };

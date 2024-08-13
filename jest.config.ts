@@ -19,6 +19,7 @@ export default {
         '^#types/(.*)$': '<rootDir>/src/types/$1',
         '^#components/(.*)$': '<rootDir>/src/components/$1',
         '^#pages/(.*)$': '<rootDir>/src/pages/$1',
+        '^#contexts/(.*)$': '<rootDir>/src/contexts/$1',
         '^#hooks/(.*)$': '<rootDir>/src/hooks/$1',
         '^#utils/(.*)$': '<rootDir>/src/utils/$1',
     },

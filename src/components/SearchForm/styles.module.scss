@@ -40,7 +40,7 @@
 
             transition: color 0.1s linear;
 
-            &[data-active=true] {
+            &[data-active='true'] {
                 color: #e0a449;
             }
 

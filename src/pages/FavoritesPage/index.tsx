@@ -1,15 +1,13 @@
 import bookmarkSecondaryIconSrc from '/icon/bookmark-secondary.svg';
-import { PageDoubleHeader } from '#components/PageDoubleHeader';
+import { ErrorBoundary } from '#components/ErrorBoundary';
+import { ErrorDetail } from '#components/ErrorDetail';
+import { FavoritesList } from '#components/FavoritesList';
 import { PageHeader } from '#components/PageHeader';
 import { PageLayout } from '#components/PageLayout';
-import { PaintingList } from '#components/PaintingList';
-import { useFavorites } from '#hooks/useFavorites';
 
 import styles from './styles.module.scss';
 
 export function FavoritesPage() {
-    const favorites = useFavorites();
-
     return (
         <PageLayout>
             <div className={styles.pageHeaderWrapper}>
@@ -25,24 +23,9 @@ export function FavoritesPage() {
                     </span>
                 </PageHeader>
             </div>
-            <div className={styles.favoritesHeaderWrapper}>
-                <PageDoubleHeader
-                    subHeader="Saved by you"
-                    mainHeader="Your favorites list"
-                />
-            </div>
-            <div className={styles.favoritesListWrapper}>
-                {favorites.favorites?.length ? (
-                    <PaintingList
-                        variant="small"
-                        paintings={favorites.favorites}
-                    />
-                ) : (
-                    <h3 className={styles.emptyList}>
-                        Your favorites list is empty
-                    </h3>
-                )}
-            </div>
+            <ErrorBoundary fallback={<ErrorDetail />}>
+                <FavoritesList />
+            </ErrorBoundary>
         </PageLayout>
     );
 }

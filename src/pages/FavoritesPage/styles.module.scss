@@ -3,10 +3,6 @@
     margin-bottom: 6em;
 }
 
-.favoritesHeaderWrapper {
-    margin-bottom: 3em;
-}
-
 .highlighted {
     display: inline-flex;
     flex-direction: row;
@@ -16,8 +12,4 @@
         height: 1em;
         padding-right: 0.5em;
     }
-}
-
-.emptyList {
-    text-align: center;
 }

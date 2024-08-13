@@ -6,6 +6,8 @@
         z-index: 0;
         margin-bottom: -65px;
 
+        cursor: pointer;
+
         > .image {
             width: 100%;
             height: 450px;
@@ -31,6 +33,8 @@
 
         position: relative;
         z-index: 1;
+
+        cursor: pointer;
 
         > .infoSection {
             display: grid;

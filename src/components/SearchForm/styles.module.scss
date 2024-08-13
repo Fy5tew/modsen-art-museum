@@ -1,7 +1,7 @@
 .searchForm {
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    gap: 1.5em;
 
     > .headerWrapper {
         max-width: 600px;
@@ -14,6 +14,43 @@
         max-width: 700px;
         width: 100%;
         margin: auto;
+    }
+
+    > .sortWrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1.5em;
+
+        max-width: 700px;
+        width: 100%;
+        margin: auto;
+
+        > .sortTitle {
+            color: #e0a449;
+            font-weight: bold;
+        }
+
+        > .sortButton {
+            border-radius: 10px;
+            padding: 1em;
+            background-color: #f0f0f0;
+
+            transition: color 0.1s linear;
+
+            &[data-active=true] {
+                color: #e0a449;
+            }
+
+            @media (hover: hover) {
+                &:hover {
+                    color: #e0a449;
+                    scale: 1.1;
+                }
+            }
+        }
     }
 
     > .resultsWrapper {
@@ -35,6 +72,12 @@
         }
 
         &:has(> .results:empty) {
+            visibility: hidden;
+        }
+    }
+
+    &:has(.results:empty) {
+        .sortWrapper {
             visibility: hidden;
         }
     }

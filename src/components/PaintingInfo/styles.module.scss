@@ -5,8 +5,9 @@
 
     > .imageWrapper {
         min-width: 400px;
-        max-width: 500px;
+        max-width: 50%;
         max-height: 600px;
+        width: 100%;
         overflow: hidden;
 
         position: relative;
@@ -81,6 +82,7 @@
         > .imageWrapper {
             margin: auto;
             min-width: unset;
+            max-width: 100%;
         }
 
         > .infoWrapper {

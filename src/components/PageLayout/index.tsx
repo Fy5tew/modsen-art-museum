@@ -13,19 +13,17 @@ export type PageLayoutProps = {
 export function PageLayout({ children }: PageLayoutProps) {
     return (
         <div className={styles.pageWrapper}>
-            <div className={styles.headerWrapper}>
-                <ContentContainer>
-                    <Header />
-                </ContentContainer>
-            </div>
-            <div className={styles.contentWrapper}>
+            <header className={styles.headerWrapper}>
+                <Header />
+            </header>
+            <main className={styles.contentWrapper}>
                 <ContentContainer className={styles.content}>
                     {children}
                 </ContentContainer>
-            </div>
-            <div className={styles.footerWraper}>
+            </main>
+            <footer className={styles.footerWraper}>
                 <Footer />
-            </div>
+            </footer>
         </div>
     );
 }

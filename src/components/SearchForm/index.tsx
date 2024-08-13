@@ -21,7 +21,7 @@ export function SearchForm() {
     );
 
     return (
-        <div className={styles.searchForm}>
+        <section className={styles.searchForm}>
             <div className={styles.headerWrapper}>
                 <PageHeader>
                     Let's Find Some <mark>Art</mark> Here!
@@ -50,6 +50,6 @@ export function SearchForm() {
                         ))}
                 </div>
             </div>
-        </div>
+        </section>
     );
 }

@@ -1,10 +1,12 @@
+import { MouseEventHandler } from 'react';
+
 import styles from './styles.module.scss';
 
 export type IconButtonProps = {
     iconSrc: string;
     alt?: string;
     isActive?: boolean;
-    onClick: () => void;
+    onClick: MouseEventHandler<HTMLButtonElement>;
 };
 
 export function IconButton({

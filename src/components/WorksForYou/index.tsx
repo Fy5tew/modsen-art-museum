@@ -14,12 +14,12 @@ export function WorksForYou() {
     const [paintings] = useSearchPaintings(FOR_YOU_QUERY, 9, page);
 
     return (
-        <div className={styles.worksForYou}>
+        <section className={styles.worksForYou}>
             <PageDoubleHeader
                 subHeader="Here some more"
                 mainHeader="Other works for you"
             />
             <PaintingList variant="small" paintings={paintings} />
-        </div>
+        </section>
     );
 }

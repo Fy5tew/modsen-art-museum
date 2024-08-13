@@ -24,7 +24,7 @@ export function SpecialGallery() {
     }, [pagination]);
 
     return (
-        <div className={styles.specialGallery}>
+        <section className={styles.specialGallery}>
             <div className={styles.headerWrapper}>
                 <PageDoubleHeader
                     subHeader="Topics for you"
@@ -37,6 +37,6 @@ export function SpecialGallery() {
             <div className={styles.paginationWrapper}>
                 <Pagination pagination={pagination} />
             </div>
-        </div>
+        </section>
     );
 }

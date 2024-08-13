@@ -1,0 +1,38 @@
+.button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+
+    width: 4em;
+    aspect-ratio: 1/1;
+
+    > .line {
+        display: block;
+        width: 100%;
+        height: 0.35em;
+        background-color: #e0a449;
+
+        transition: all 0.3s linear;
+    }
+
+    &[data-active='true'] {
+        > .line {
+            width: 100%;
+        }
+
+        > .line:first-child {
+            transform: translateY(calc(100% + 1em)) rotate(-45deg);
+        }
+
+        > .line:last-child {
+            transform: translateY(calc(-100% - 1em)) rotate(45deg);
+        }
+
+        > .line:not(:first-child, :last-child) {
+            transform: scale(0);
+            background-color: transparent;
+        }
+    }
+}
